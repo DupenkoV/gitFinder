@@ -1,0 +1,40 @@
+
+:global {
+    body[data-theme='light'] {
+        --themeSwitcher-color: var(--gray-100);
+        --themeSwitcher-color-hover: var(--gray-300)
+    }
+
+    body[data-theme='dark'] {
+        --themeSwitcher-color: var(--white);
+        --themeSwitcher-color-hover: var(--gray-100)
+    }
+}
+
+.themeSwitcher {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+
+    span {
+        color: var(--themeSwitcher-color);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+    }
+
+    &:hover {
+        span {
+            color: var(--themeSwitcher-color-hover)
+        }
+
+        svg {
+            fill: var(--themeSwitcher-color-hover);
+        }
+    }
+
+    .icon {
+        fill: var(--themeSwitcher-color);
+    }
+}
