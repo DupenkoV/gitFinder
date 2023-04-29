@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import styles from './Search.module.scss';
 import { ReactComponent as SearchIcon } from 'assets/icon-search.svg';
 import { Button } from 'components/Button';
